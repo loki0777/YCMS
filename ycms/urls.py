@@ -3,7 +3,7 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('', views.Nav3, name='Nav3'),
     path('calendar', views.calendar, name='calendar'),
     path('info', views.info, name='info'),
     path('packagegall', views.packagegall, name='packagegall'),
@@ -16,4 +16,6 @@ urlpatterns = [
     path('bootstrap', views.bootstrap, name='bootstrap'),
     path('Nav', views.Nav, name='Nav'),
     path('Nav3', views.Nav3, name='Nav3'),
+    path('footer', views.footer, name='footer'),
+    path('tour', views.tour, name='tour'),
 ]

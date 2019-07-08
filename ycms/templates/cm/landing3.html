@@ -59,7 +59,7 @@
       <input class='appointment' date-day='-3' placeholder='What would you like to do?' required='true' type='text'>
       <span>-3</span>
       <em></em>
-</label>
+</label>2
 <label class='day invalid' data-day='2'>
       <input class='appointment' date-day='-2' placeholder='What would you like to do?' required='true' type='text'>
       <span>-2</span>
@@ -248,17 +248,33 @@
     <div class="modal-dialog">
     
       <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
+      <div class="cont">
+        <div class="modal-heds">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+
+
         </div>
         <div class="modal-body">
-          <p>Some text in the modal.</p>
+<form>
+            <label class="SignLabel" for="fname">First Name:</label>
+            <input type="text" class="form-controlk" id="fname" placeholder="Enter first Name" name="fname">
+
+            <label class="SignLabel" for="email">Email:</label>
+            <input type="email" class="form-controlk" id="email" placeholder="Enter email" name="email">
+
+
+
+            <label class="SignLabel" for="pwd">Password:</label>
+            <input type="password" class="form-controlk" id="pwd" placeholder="Enter password" name="pwd">
+
+
+
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <div class="modal-fots">
+          <button type="button" class="btn btn-warning" pull >Sign up</button>
         </div>
+</form>
+        
       </div>
       
     </div>

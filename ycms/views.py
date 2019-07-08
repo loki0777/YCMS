@@ -6,8 +6,6 @@ from django.http import HttpResponse
 
 
 
-def home(request):
-    return render(request, 'cm/home.html', {})
 
 def packagegall(request):
     return render(request, 'cm/Packages.html', {})
@@ -18,6 +16,14 @@ def Nav(request):
 
 def Nav3(request):
     return render(request, 'cm/landing3.html', {})
+
+def tour(request):
+    return render(request, 'cm/tour.html', {})
+
+
+
+def footer(request):
+    return render(request, 'cm/footer.html', {})
 
 
 def info(request):
