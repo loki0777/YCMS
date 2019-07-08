@@ -1,0 +1,42 @@
+{% load static %}
+
+<html>
+<head>
+	<title>
+		
+	</title>
+<link rel="stylesheet" href="{% static 'css/nav.css' %}">
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" href="{% static 'css/admin.css' %}">
+<link rel="stylesheet" href="{% static 'css/calendar.css' %}">
+
+<script src="{% static 'js/script1.js' %}"></script>
+<script src="{% static 'js/script2.js' %}"></script>
+<script src="{% static 'js/script3.js' %}"></script>
+
+</head>
+
+
+<body background="{%static 'img/bg.png'%}">
+
+
+
+<div class="row"> 
+  <img src="{% static 'img/CM.png' %}" width="180px" height="80px">
+            
+    <ul class="main-nav">    
+        <li class="active"><a href="homeext"> HOME </a></li>
+        <li><a href="{% url 'calendar' %}"> GALLERY </a></li>
+        <li><a href="{% url 'bootstrap' %}"> ABOUT US </a></li>
+        <li><a href="{% url 'Nav' %}"> CONTACT US </a></li>
+    </ul>           
+</div>
+
+<div>
+  {% block content %}
+  {% endblock %}
+</div>
+
+
+</body>
+</html>

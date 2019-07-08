@@ -1,0 +1,81 @@
+{% extends 'cm/home.html' %}
+
+{% block content %}
+
+
+<div class="tab-container">
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Request')" id="defaultOpen">Request</button>
+    <button class="tablinks" onclick="openCity(event, 'Schedule')">Schedule</button>
+    <button class="tablinks" onclick="openCity(event, 'activities')">Activities</button>
+</div>
+
+<div id="Request" class="tabcontent">
+    <h3>Request</h3>
+<table>
+<thead>
+  <tr>
+  	<th>Event Date</th>
+  	<th>Duration</th>
+  	<th>Venue Address</th>
+    <th>Wedding Event</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email Address</th>
+    <th>Contact Number</th>
+    <th>Address</th>
+  </tr>
+</thead>
+   {% for event in details %}
+<tbody>
+  <tr>
+    <td>{{ event.eDate }}</td>
+    	<td>{{ event.duration }}</td>
+    		<td>{{ event.vAddress }}</td>
+    			<td>{{ event.eType }}</td>
+    				<td>{{ event.fname }}</td>
+    					<td>{{ event.lname }}</td>
+    						<td>{{ event.email }}</td>
+    							<td>{{ event.contact }}</td>
+    								<td>{{ event.address }}</td>   
+ 
+  </tr>
+</tbody>
+ {% endfor %}
+
+</table>
+
+</div>
+
+<div id="Schedule" class="tabcontent">
+    <h3>Schedule</h3>
+    <p>Schedule</p>
+</div>
+
+<div id="activities" class="tabcontent">
+    <h3>activities</h3>
+    <p>activities</p>
+</div>
+</div>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+
+{% endblock %}

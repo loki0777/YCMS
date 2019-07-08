@@ -1,0 +1,92 @@
+{% load static %}
+
+
+
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="{% static 'css/nav.css' %}">
+	<link rel="stylesheet" href="{% static 'css/info.css' %}">
+</head>
+<body>
+
+<div class="row"> 
+  <img src="{% static 'img/CM.png' %}" width="150px" height="70px">
+            
+    <ul class="main-nav">    
+        <li class="active"><a href=""> HOME </a></li>
+        <li><a href=""> GALLERY </a></li>
+        <li><a href=""> ABOUT US </a></li>
+        <li><a href=""> CONTACT US </a></li>
+
+    </ul>           
+</div>
+<br><br><br>
+<div class="Photo">
+	<img src="{% static 'img/package1.png' %}" width="570px" height="300px">
+
+</div>
+
+
+
+
+<form method="POST" action="/save_details">{% csrf_token %}
+<div class="container2">
+
+  <br><br>
+  <h3>Event Details</h3>
+
+
+<div class="container3">
+    <input type="date" name="eDate" class="form-control" placeholder="Event Date"><br>
+	 <input type="number" name="duration" min="1" max="24" class="form-control" placeholder="Duration" required><br>
+	 <input type="text" name="vAddress" class="form-control" placeholder="Venue Address" required><br>
+  <select name="eType">
+    <option value="0">--Select Type of Event--</option>
+    <option value="Wedding">Wedding</option>
+    <option value="Birthday">Birthday</option>
+    <option value="Party">Party</option>
+    <option value="Prenuptial">Prenuptial</option>
+  </select>
+</div>
+
+
+	 <br>
+  		<h3>Client Details</h3>
+ 
+ 	 <input type="text" name="fname" class="form-control" placeholder="First Name" required><br>
+ 	 <input type="text" name="lname" class="form-control" placeholder="Last Name" required><br>
+ 	 <input type="text" name="email" class="form-control" placeholder="Email Address" required><br>
+ 	 <input type="tel" name="contact" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"" class="form-control" placeholder="Contact Number" required><br>
+ 	 <input type="text" name="address" class="form-control" placeholder="Home Address" required><br>
+
+
+
+
+	
+<!-- <div class="button"> -->
+  <!-- <a href="" class="gg">Select</a> -->
+ <button type="submit" name="submit" class="btn"> Submit </button>
+<!-- </div>  -->
+
+</form>
+
+
+
+
+
+</div>
+ 
+
+
+
+ </div>
+
+
+
+
+
+
+
+</body>
+</html>

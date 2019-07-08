@@ -1,0 +1,171 @@
+
+
+.containerNko {
+
+margin-top: 40px;
+margin-left: 30px;
+background: rgb(0, 0, 0, 0.6);
+width: 380px;
+height: 450px;
+border-radius: 20px;
+box-shadow: 25px 18px 9px grey;
+float: left;
+
+}
+
+
+
+.form-controlk {
+width: 315px;
+display: block;
+margin-left: 30px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 15px;
+
+
+}
+.checkboxer{
+	display: flex;
+}
+.labelel {
+
+color: white;
+margin-left: 35px;
+display: flex;
+
+}
+
+
+.sign {
+
+	margin-left: 50px;
+	color: #5c85d6;
+
+}
+
+.log {
+
+ 	color: white;
+ 	font-size: 30px;
+ 	margin-top: 60px;
+	text-align: center;
+ 	font-weight: bolder;
+ 	background-color: transparent;
+ 	border: none;
+ 	font-family: Century Gothic, sans-serisf;
+
+}
+
+
+.book {
+ 	font-size: 30px;
+ 	margin-top: 60px;
+	text-align: center;
+ 	font-weight: bolder;
+ 	font-family: Century Gothic, sans-serisf;
+	color: black;
+	border: none;
+	background-color: transparent;
+}
+
+
+
+
+.tuplok {
+
+	background-color: white;
+	height: 35px;
+	width: 100px;
+	border-radius: 20px;
+	margin-right: 35px;
+	margin-top: 30px;
+
+
+}
+
+.container1 {
+
+margin-top: 110px;
+margin-left: 40px;
+background: rgb(242, 242, 242, 0.7);
+width: 380px; 
+height: 430px;
+border-radius: 20px;
+box-shadow: 25px 18px 18px 9px grey;
+float: left;
+
+}
+
+.container1 img {
+
+	width: 400px;
+	height: auto;
+}
+
+.form-control1 {
+width: 265px;
+display: block;
+margin-left: 30px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 15px;
+
+
+}
+
+.container2 {
+
+margin-top: 40px;
+margin-left: 30px;
+background: rgb(0, 0, 0, 0.6);
+width: 380px;
+height: 450px;
+border-radius: 20px;
+box-shadow: 25px 18px 9px grey;
+float: left;
+
+
+
+}
+
+.calendar {
+
+	color: white;
+ 	font-size: 30px;
+ 	margin-top: 54px;
+	text-align: center;
+ 	font-weight: bolder;
+ 	font-family: Century Gothic, sans-serisf;
+ 	background-color: transparent;
+ 	border: none;
+
+
+
+}
+
+.Cmonth {
+
+ 	background-color: transparent;
+ 	border: none;
+	color: white;
+ 	font-size: 30px;
+	text-align: center;
+ 	font-weight: bolder;
+ 	font-family: Century Gothic, sans-serisf;
+}
+
+.weekday {
+	margin-left: 5px;
+	padding: 10px;
+}

@@ -1,0 +1,144 @@
+{% load static %}
+<html>
+<head>
+   <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+  <link rel="stylesheet" href="{% static 'css/pakagegall.css' %}">
+</head>
+<body>
+
+<div class="row"> 
+  <img src="{% static 'img/CM.png' %}" width="180px" height="80px">
+            
+    <ul class="main-nav">    
+        <li class="active"><a href=""> HOME </a></li>
+        <li><a href="{% url 'calendar' %}"> GALLERY </a></li>
+        <li><a href=""> ABOUT US </a></li>
+        <li><a href=""> CONTACT US </a></li>
+
+    </ul>           
+</div>
+
+
+
+<br><br>
+<h2 style="text-align:center">PACKAGES</h2>
+
+
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="{% static 'img/package1.png' %}" width="100%" height="67%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="{% static 'img/package2.png' %}" width="100%" height="67%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="{% static 'img/package3.png' %}" width="100%" height="67%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="{% static 'img/package4.png' %}" width="100%" height="67%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="{% static 'img/package5.png' %}" width="100%" height="67%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="{% static 'img/package6.png' %}" width="100%" height="67%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="{% static 'img/package1.png' %}" width="100%" height="20%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{% static 'img/package2.png' %}" width="100%" height="20%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{% static 'img/package3.png' %}" width="100%" height="20%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{% static 'img/package4.png' %}" width="100%" height="20%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="{% static 'img/package5.png' %}" width="100%" height="20%" onclick="currentSlide(5)">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="{% static 'img/package6.png' %}" width="100%" height="20%" onclick="currentSlide(6)">
+
+
+
+    </div>
+  </div>
+</div>
+
+
+<form>
+  <div class="container2">
+
+  <br><br>
+  <h3>INCLUSION:</h3>
+
+  <p>1 Bride bouquet of flower</p>
+  <p>6 Female entourage- wrist corsage</p>
+  <p>2 flower girl - basket with headress</p>
+  <p>2 Mothers - pin corsage</p>
+  <p>5 Female sponsors -pin corsage</p>
+
+
+
+<button class="gg">Select</button>
+
+
+</form>
+
+
+
+<script>
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
